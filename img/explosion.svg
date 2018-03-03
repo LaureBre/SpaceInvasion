@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 42 43"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="explosion.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="891"
+     inkscape:window-height="480"
+     id="namedview152"
+     showgrid="false"
+     inkscape:zoom="5.4883721"
+     inkscape:cx="21"
+     inkscape:cy="21.5"
+     inkscape:window-x="454"
+     inkscape:window-y="187"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="imagebot_138">
+      <stop
+         id="imagebot_148"
+         stop-color="#ffd73b"
+         offset="0" />
+      <stop
+         id="imagebot_147"
+         stop-color="#ee8400"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="imagebot_137">
+      <stop
+         id="imagebot_146"
+         stop-color="#ff5959"
+         offset="0" />
+      <stop
+         id="imagebot_145"
+         stop-color="#d90000"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="imagebot_140">
+      <stop
+         id="imagebot_142"
+         stop-color="#d700d7"
+         offset="0" />
+      <stop
+         id="imagebot_141"
+         stop-color="#6e006e"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="imagebot_100"
+       y2="-.2495"
+       xlink:href="#imagebot_140"
+       y1=".49998"
+       x2=".3996"
+       x1=".5" />
+    <linearGradient
+       id="imagebot_102"
+       y2="-.105"
+       xlink:href="#imagebot_140"
+       y1=".68408"
+       x2=".49339"
+       x1=".65381" />
+    <linearGradient
+       id="imagebot_70"
+       y2=".49998"
+       xlink:href="#imagebot_140"
+       y1=".34455"
+       x2="1.2707" />
+    <linearGradient
+       id="imagebot_104"
+       y2=".70296"
+       xlink:href="#imagebot_140"
+       y1=".69619"
+       x2=".46357"
+       x1=".92714" />
+    <linearGradient
+       id="imagebot_92"
+       y2=".22392"
+       xlink:href="#imagebot_140"
+       y1=".71829"
+       x2="-.17891"
+       x1=".61886" />
+    <linearGradient
+       id="imagebot_90"
+       y2=".00001"
+       xlink:href="#imagebot_140"
+       y1=".76906"
+       x2=".27671"
+       x1=".38819" />
+    <linearGradient
+       id="imagebot_94"
+       y2="-.77166"
+       xlink:href="#imagebot_140"
+       y1=".51969"
+       x2=".5"
+       x1=".5" />
+    <linearGradient
+       id="imagebot_96"
+       y2=".0165"
+       xlink:href="#imagebot_140"
+       y1=".50825"
+       x2=".5"
+       x1=".5" />
+    <linearGradient
+       id="imagebot_98"
+       y2=".25777"
+       xlink:href="#imagebot_140"
+       y1=".5"
+       x2=".13222"
+       x1=".56686" />
+    <linearGradient
+       id="imagebot_68"
+       y2="-.51422"
+       xlink:href="#imagebot_138"
+       y1=".43963"
+       x2=".3389"
+       x1=".4829" />
+    <linearGradient
+       id="imagebot_52"
+       y2="-.44545"
+       xlink:href="#imagebot_138"
+       y1=".48547"
+       x2="-.08056"
+       x1=".5107" />
+    <linearGradient
+       id="imagebot_50"
+       y2="-.22717"
+       xlink:href="#imagebot_138"
+       y1=".68234"
+       x2="-.15444"
+       x1=".39111" />
+    <linearGradient
+       id="imagebot_54"
+       y2=".1914"
+       xlink:href="#imagebot_138"
+       y1=".68187"
+       x2="-.14227"
+       x1=".62203" />
+    <linearGradient
+       id="imagebot_56"
+       y2="-.42717"
+       y1=".41714"
+       x2=".15144"
+       x1=".24511">
+      <stop
+         id="imagebot_144"
+         stop-color="#ffd73b"
+         offset="0" />
+      <stop
+         id="imagebot_143"
+         stop-color="#ee8400"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="imagebot_60"
+       y2="-.40477"
+       xlink:href="#imagebot_138"
+       y1=".93474"
+       x2="-.19208"
+       x1=".62791" />
+    <linearGradient
+       id="imagebot_62"
+       y2="-.29668"
+       xlink:href="#imagebot_138"
+       y1=".48018"
+       x2=".07541"
+       x1=".48569" />
+    <linearGradient
+       id="imagebot_48"
+       y2="-.15747"
+       xlink:href="#imagebot_138"
+       y1=".94076"
+       x2="-.24817"
+       x1=".38559" />
+    <linearGradient
+       id="imagebot_64"
+       y2="-.4061"
+       xlink:href="#imagebot_138"
+       y1=".99341"
+       x2="-.62939"
+       x1=".32402" />
+    <linearGradient
+       id="imagebot_88"
+       y2="-.46103"
+       xlink:href="#imagebot_137"
+       y1="1"
+       x2="0" />
+    <linearGradient
+       id="imagebot_72"
+       y2="-.76664"
+       xlink:href="#imagebot_137"
+       y1=".53236"
+       x2=".5"
+       x1=".5" />
+    <linearGradient
+       id="imagebot_74"
+       y2=".00403"
+       xlink:href="#imagebot_137"
+       y1=".50203"
+       x2="0"
+       x1=".5" />
+    <linearGradient
+       id="imagebot_76"
+       y2="-.00014"
+       xlink:href="#imagebot_137"
+       y1="1"
+       x2=".44393"
+       x1=".44393" />
+    <linearGradient
+       id="imagebot_78"
+       y2="-.35809"
+       xlink:href="#imagebot_137"
+       y1=".60903"
+       x2="0"
+       x1=".5" />
+    <linearGradient
+       id="imagebot_80"
+       y2="-.35253"
+       xlink:href="#imagebot_137"
+       y1=".99994"
+       x2=".5"
+       x1=".7645" />
+    <linearGradient
+       id="imagebot_82"
+       y2="-.00002"
+       xlink:href="#imagebot_137"
+       y1=".49996"
+       x2=".5428"
+       x1=".5428" />
+    <linearGradient
+       id="imagebot_86"
+       y2=".00003"
+       xlink:href="#imagebot_137"
+       y1=".50001"
+       x2=".45256" />
+    <filter
+       id="imagebot_44"
+       y="-.17069"
+       width="1.3945"
+       x="-.19725"
+       height="1.3414">
+      <feGaussianBlur
+         id="imagebot_136"
+         stdDeviation="0.09611" />
+    </filter>
+    <filter
+       id="imagebot_34"
+       y="-.09151"
+       width="1.291"
+       x="-.14551"
+       height="1.183">
+      <feGaussianBlur
+         id="imagebot_135"
+         stdDeviation="0.09611" />
+    </filter>
+    <filter
+       id="imagebot_32"
+       y="-.13053"
+       width="1.3763"
+       x="-.18815"
+       height="1.2611">
+      <feGaussianBlur
+         id="imagebot_134"
+         stdDeviation="0.09611" />
+    </filter>
+    <filter
+       id="imagebot_30"
+       y="-.13721"
+       width="1.4035"
+       x="-.20173"
+       height="1.2744">
+      <feGaussianBlur
+         id="imagebot_133"
+         stdDeviation="0.09611" />
+    </filter>
+    <filter
+       id="imagebot_36"
+       y="-.18114"
+       width="1.4227"
+       x="-.21133"
+       height="1.3623">
+      <feGaussianBlur
+         id="imagebot_132"
+         stdDeviation="0.09611" />
+    </filter>
+    <filter
+       id="imagebot_38"
+       y="-.16138"
+       width="1.3061"
+       x="-.15304"
+       height="1.3228">
+      <feGaussianBlur
+         id="imagebot_131"
+         stdDeviation="0.09611" />
+    </filter>
+    <filter
+       id="imagebot_40"
+       y="-.19296"
+       width="1.634"
+       x="-.317"
+       height="1.3859">
+      <feGaussianBlur
+         id="imagebot_130"
+         stdDeviation="0.09611" />
+    </filter>
+    <filter
+       id="imagebot_42"
+       y="-.08143"
+       width="1.2959"
+       x="-.14793"
+       height="1.1629">
+      <feGaussianBlur
+         id="imagebot_129"
+         stdDeviation="0.09611" />
+    </filter>
+    <filter
+       id="imagebot_46"
+       y="-.12328"
+       width="1.4128"
+       x="-.20642"
+       height="1.2466">
+      <feGaussianBlur
+         id="imagebot_128"
+         stdDeviation="0.09611" />
+    </filter>
+    <filter
+       id="imagebot_58"
+       y="-.04719"
+       width="1.45"
+       x="-.22501"
+       height="1.0944">
+      <feGaussianBlur
+         id="imagebot_127"
+         stdDeviation="0.18284" />
+    </filter>
+    <filter
+       id="imagebot_18"
+       y="-.18656"
+       width="1.6633"
+       x="-.33166"
+       height="1.3731">
+      <feGaussianBlur
+         id="imagebot_126"
+         stdDeviation="0.18284" />
+    </filter>
+    <filter
+       id="imagebot_20"
+       y="-.11264"
+       width="1.8748"
+       x="-.43739"
+       height="1.2253">
+      <feGaussianBlur
+         id="imagebot_125"
+         stdDeviation="0.18284" />
+    </filter>
+    <filter
+       id="imagebot_22"
+       y="-.09632"
+       width="1.2041"
+       x="-.10205"
+       height="1.1926">
+      <feGaussianBlur
+         id="imagebot_124"
+         stdDeviation="0.18284" />
+    </filter>
+    <filter
+       id="imagebot_24"
+       y="-.30626"
+       width="1.1682"
+       x="-.08407"
+       height="1.6125">
+      <feGaussianBlur
+         id="imagebot_123"
+         stdDeviation="0.18284" />
+    </filter>
+    <filter
+       id="imagebot_108"
+       y="-.30614"
+       width="1.2132"
+       x="-.1066"
+       height="1.6123">
+      <feGaussianBlur
+         id="imagebot_122"
+         stdDeviation="0.18284" />
+    </filter>
+    <filter
+       id="imagebot_66"
+       y="-.07557"
+       width="1.7915"
+       x="-.39574"
+       height="1.1511">
+      <feGaussianBlur
+         id="imagebot_121"
+         stdDeviation="0.18284" />
+    </filter>
+    <filter
+       id="imagebot_28"
+       y="-.12702"
+       width="1.1769"
+       x="-.08844"
+       height="1.254">
+      <feGaussianBlur
+         id="imagebot_120"
+         stdDeviation="0.18284" />
+    </filter>
+    <filter
+       id="imagebot_26"
+       y="-.24946"
+       width="1.1695"
+       x="-.08473"
+       height="1.4989">
+      <feGaussianBlur
+         id="imagebot_119"
+         stdDeviation="0.18284" />
+    </filter>
+    <filter
+       id="imagebot_6"
+       y="-.15389"
+       width="1.2877"
+       x="-.14385"
+       height="1.3078">
+      <feGaussianBlur
+         id="imagebot_118"
+         stdDeviation="0.13314" />
+    </filter>
+    <filter
+       id="imagebot_8"
+       y="-.45941"
+       width="1.305"
+       x="-.15252"
+       height="1.9188">
+      <feGaussianBlur
+         id="imagebot_117"
+         stdDeviation="0.13314" />
+    </filter>
+    <filter
+       id="imagebot_10"
+       y="-.16358"
+       width="2.3842"
+       x="-.69211"
+       height="1.3272">
+      <feGaussianBlur
+         id="imagebot_116"
+         stdDeviation="0.13314" />
+    </filter>
+    <filter
+       id="imagebot_12"
+       y="-.16054"
+       width="1.4576"
+       x="-.22879"
+       height="1.3211">
+      <feGaussianBlur
+         id="imagebot_115"
+         stdDeviation="0.13314" />
+    </filter>
+    <filter
+       id="imagebot_14"
+       y="-.3339"
+       width="1.414"
+       x="-.207"
+       height="1.6678">
+      <feGaussianBlur
+         id="imagebot_114"
+         stdDeviation="0.13314" />
+    </filter>
+    <filter
+       id="imagebot_16"
+       y="-.3918"
+       width="1.3105"
+       x="-.15525"
+       height="1.7836">
+      <feGaussianBlur
+         id="imagebot_113"
+         stdDeviation="0.13314" />
+    </filter>
+    <filter
+       id="imagebot_84"
+       y="-.1932"
+       width="1.756"
+       x="-.378"
+       height="1.3864">
+      <feGaussianBlur
+         id="imagebot_112"
+         stdDeviation="0.13314" />
+    </filter>
+    <filter
+       id="imagebot_4"
+       y="-.20075"
+       width="1.8171"
+       x="-.40857"
+       height="1.4015">
+      <feGaussianBlur
+         id="imagebot_111"
+         stdDeviation="0.13314" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Colorize"
+       id="filter4456">
+      <feComposite
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="0"
+         k2="0.5"
+         result="composite1"
+         id="feComposite4458" />
+      <feColorMatrix
+         in="composite1"
+         values="0"
+         type="saturate"
+         result="colormatrix1"
+         id="feColorMatrix4460" />
+      <feFlood
+         flood-opacity="0.737255"
+         flood-color="rgb(0,12,51)"
+         result="flood1"
+         id="feFlood4462" />
+      <feBlend
+         in="flood1"
+         in2="colormatrix1"
+         mode="multiply"
+         result="blend1"
+         id="feBlend4464" />
+      <feBlend
+         in2="blend1"
+         mode="screen"
+         result="blend2"
+         id="feBlend4466" />
+      <feColorMatrix
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2"
+         id="feColorMatrix4468" />
+      <feComposite
+         in="colormatrix2"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="composite2"
+         id="feComposite4470" />
+    </filter>
+  </defs>
+  <g
+     id="imagebot_2"
+     label="Layer 1"
+     style="filter:url(#filter4456)">
+    <path
+       id="imagebot_107"
+       d="m14.738 14.187c-1.107-0.751-2.533-0.687-4.116-0.772 1.472 0.298 2.537 0.718 3.822 1.433-1.738-1.007-0.627-0.94 0.294-0.661z"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_108)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_103"
+       d="m26.475 1025.7c3.081 2.4 4.234 6.3 4.658 8.6 0.582 3.2 1.093 7.4 1.303 13l0.063 0.1c1.291-5.1 0.676-9.8 0.044-13.3-0.632-3.6-1.964-6.8-6.037-8.4h-0.031z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_104)" />
+    <path
+       id="imagebot_101"
+       d="m25.988 1023.5c4.494-2.5 8.126-1.9 11.176-1.1 3.051 0.9 5.849 2.4 7.758 6.8l0.078-0.1c0.268-4.6-3.582-7.9-7.128-8.9-4.527-1-9.407-0.1-11.864 3.3h-0.02z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_102)" />
+    <path
+       id="imagebot_99"
+       d="m25.314 1018.6l0.228 0.1c2.948-1.6 5.15-3.6 8.276-3.9 3.501 0 7.46 2.3 9.364 5.4l0.198-0.1c-2.223-4-5.019-7.4-9.782-7.4-4.646 0.6-5.898 3.4-8.284 5.9z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_100)" />
+    <path
+       id="imagebot_97"
+       d="m23.769 1018.9l-0.041 0.1c-0.707-5.7 0.215-10.2 2.687-13.6h-0.095c-5.108 3.6-5.253 8.4-2.551 13.5z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_98)" />
+    <path
+       id="imagebot_95"
+       d="m4.7625 1011.2l0.0621-0.2c7.8314-0.2 13.097 3.5 13.439 9.9h0.021c-3.146-3.9-5.106-7.6-13.522-9.7z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_96)" />
+    <path
+       id="imagebot_93"
+       d="m11.478 1021.3c-2.2764 0.1-4.7677 1-7.4906 2.8h0.0676c5.3367-1.6 9.122-2.1 13.434-1.3l0.202-0.1c-1.897-1-3.936-1.6-6.213-1.4z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_94)" />
+    <path
+       id="imagebot_91"
+       d="m22.299 1027.8c-2.616 1.5-3.668 5.5-1.972 11.3l0.062-0.3c0.559-6.2 1.261-8.7 1.885-11.1l0.025 0.1z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_92)" />
+    <path
+       id="imagebot_89"
+       d="m18.704 1025.4c-8.368 0.6-12.159 6.7-11.897 12l0.0631-0.1c3.3169-6 4.7549-8.7 11.7-11.7l0.134-0.2z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_90)" />
+    <path
+       id="imagebot_87"
+       d="m10.397 1017.5l0.026 0.1c1.649 0.9 3.574 1.5 5.487 3.2l0.021-0.1c-1.158-3.2-2.471-3.5-5.534-3.2z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_88)" />
+    <path
+       id="imagebot_85"
+       d="m18.935 1013.3l-0.078 0.1c0.14 1.6 1.399 3.6 1.884 5.7h0.167c0.42-1.9 0.272-4.1-1.973-5.8z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_86)" />
+    <path
+       id="imagebot_83"
+       d="m20.214 15.51l0.662 1.654c-0.16-0.508-0.146-0.876 0.184-0.992l-0.846-0.662z"
+       fill-opacity=".78571"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_84)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_81"
+       d="m27.05 1013.3c-1.33 0.4-2.2 0.9-1.972 3.6h0.13c0.667-1.1 1.461-2 1.884-3.5l-0.042-0.1z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_82)" />
+    <path
+       id="imagebot_79"
+       d="m25.64 1021.9h0.094c1.212-1.4 2.348-1.9 3.237-2.4 0.889-0.4 2.452-1.2 2.908-0.8l0.088-0.1c-1.397-1-1.952-1.1-3.613-0.3-1.648 1.1-2.247 1.8-2.714 3.6z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_80)" />
+    <path
+       id="imagebot_77"
+       d="m26.925 1024.7l0.028 0.1c1.815 0.1 3.867 0.5 5.499 1.8l0.024-0.1c-0.818-2.5-3.386-3.2-5.551-1.8z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_78)" />
+    <path
+       id="imagebot_75"
+       d="m24.141 1027.8l-0.146 0.1c-0.036 1.9-0.184 3.4 0.149 4.9h0.02c1.119-1.6 1.113-3.1-0.023-5z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_76)" />
+    <path
+       id="imagebot_73"
+       d="m17.206 1027.9c-0.994 0.8-1.059 2-1.161 3.8h0.062c0.649-1.1 1.161-2.5 1.885-3 0.723-0.6 1.696-1.3 2.211-1.3v-0.2c-1.166 0-2.038 0.2-2.997 0.7z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_74)" />
+    <path
+       id="imagebot_71"
+       d="m11.8 1025.6c0.593-0.5 2.161-1 3.075-1.1 0.913-0.2 1.912-0.4 3.074-0.2l0.153 0.1c-0.998-0.8-2.524-1.1-3.681-0.9-1.111 0.3-1.831 1.3-2.674 2l0.053 0.1z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_72)" />
+    <path
+       id="imagebot_69"
+       d="m25.444 1026.6h0.038c2.737 3.2 2.726 7.6 1.46 11.3l0.026-0.1c3.113-3.7 3.105-7.8-1.524-11.2z"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       stroke-width="1px"
+       fill="url(#imagebot_70)" />
+    <path
+       id="imagebot_67"
+       d="m7.4432 1015.9l-1.2209-1.2h-1.7097l0.7611-1.5-0.4804-1.7 1.6913 0.3 1.4127-1 0.2842 1.7 1.3535 1-1.5156 0.8-0.5762 1.6z"
+       fill-rule="evenodd"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       fill="url(#imagebot_68)" />
+    <path
+       id="imagebot_65"
+       d="m23.449 11.798c-1.066 1.744-0.788 3.776-0.515 5.807-0.281-0.043-1.433-4.625 0.515-5.807z"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_66)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_63"
+       d="m22.637 1014.5l-1.998-0.5-1.811 1-0.136-2.1-1.496-1.4 1.914-0.8 0.887-1.8 1.318 1.6 2.044 0.2-1.098 1.8 0.376 2z"
+       fill-rule="evenodd"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       fill="url(#imagebot_64)" />
+    <path
+       id="imagebot_61"
+       d="m39.379 1023l-2.053-1.1-2.273 0.5 0.435-2.3-1.242-2 2.323-0.2 1.505-1.8 1 2.1 2.173 0.9-1.705 1.6-0.163 2.3z"
+       fill-rule="evenodd"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       fill="url(#imagebot_62)" />
+    <path
+       id="imagebot_59"
+       d="m35.635 1029l-1.908-0.3-1.612 1-0.296-1.9-1.514-1.2 1.725-0.9 0.676-1.8 1.362 1.4 1.932 0.1-0.883 1.7 0.518 1.9z"
+       fill-rule="evenodd"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       fill="url(#imagebot_60)" />
+    <path
+       id="imagebot_57"
+       d="m27.712 26.205c1.281 1.554 1.921 8.173 1.875 9.299 0.245-1.115-0.037-7.939-1.875-9.299z"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_58)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_55"
+       d="m31.283 1039.5l-1.541-1-1.835 0.3 0.508-1.8-0.839-1.6 1.855-0.1 1.316-1.3 0.639 1.7 1.652 0.9-1.46 1.1-0.295 1.8z"
+       fill-rule="evenodd"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       fill="url(#imagebot_56)" />
+    <path
+       id="imagebot_53"
+       d="m22.887 1039.8h-1.857l-1.342 1.3-0.603-1.8-1.635-0.9 1.483-1.1 0.332-1.8 1.52 1.1 1.841-0.3-0.545 1.8 0.806 1.7z"
+       fill-rule="evenodd"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       fill="url(#imagebot_54)" />
+    <path
+       id="imagebot_51"
+       d="m8.6534 1030.7l-2.1281-0.6-1.9786 1-0.0761-2.2-1.5584-1.6 2.0811-0.7 1.0154-2 1.3622 1.8 2.186 0.3-1.2391 1.9 0.3356 2.1z"
+       fill-rule="evenodd"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       fill="url(#imagebot_52)" />
+    <path
+       id="imagebot_49"
+       d="m10.615 1043.3l-2.1264-1.7-2.7182 0.2 0.962-2.5-1.0236-2.6 2.721 0.2 2.0852-1.8 0.72 2.6 2.312 1.5-2.276 1.5-0.656 2.6z"
+       fill-rule="evenodd"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       fill="url(#imagebot_50)" />
+    <path
+       id="imagebot_47"
+       d="m29.509 1010.7l-0.984-0.6-1.148 0.2 0.292-1.2-0.553-1 1.164-0.1 0.807-0.8 0.428 1.1 1.051 0.5-0.9 0.7-0.157 1.2z"
+       fill-rule="evenodd"
+       transform="translate(-2.9122 -1.0022) matrix(1 0 0 1 0 -1004.4)"
+       label="Layer 1"
+       fill="url(#imagebot_48)" />
+    <path
+       id="imagebot_45"
+       d="m11.305 13.929c-0.104 0-1.091-0.208-1.091-0.208l0.285 0.988-0.311 0.883 0.522-0.778c-0.231-0.607 0.067-0.83 0.595-0.885z"
+       fill-opacity=".86607"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_46)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_43"
+       d="m10.136 24.506l-1.1699 0.39 1.0135 0.962c-0.624-0.766-0.2348-1.059 0.1564-1.352z"
+       fill-opacity=".86607"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_44)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_41"
+       d="m20.739 12.5l-0.338 0.623-1.221 0.52 0.883 0.858 0.026 0.831s0.286-0.91 0.182-0.935c-0.767-0.19-0.737-1.161 0.312-1.04l0.156-0.857z"
+       fill-opacity=".86607"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_42)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_39"
+       d="m26.794 11.33l-0.727 0.052 0.363 0.494-0.233 0.65c0.112-0.247 0.225-0.497 0.337-0.676-0.325-0.483 0.072-0.423 0.26-0.52z"
+       fill-opacity=".86607"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_40)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_37"
+       d="m32.642 18.269l-1.508 0.208 0.91 1.221c-0.804-1.049 0.006-1.177 0.598-1.429z"
+       fill-opacity=".86607"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_38)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_35"
+       d="m29.523 23.857l-1.091 0.493 0.961 0.78c-0.715-0.514-0.308-0.895 0.13-1.273z"
+       fill-opacity=".86607"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_36)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_33"
+       d="m12.552 31.783l-1.585-0.13 0.598 1.689-0.104 0.832 0.39-0.858c-1.149-1.586 0.11-1.3 0.701-1.533z"
+       fill-opacity=".86607"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_34)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_31"
+       d="m20.349 31.653l-0.052 0.286-1.013 0.78 1.117 0.701s-1.117-0.935 0.078-1.403c0.108-0.042-0.104-0.312-0.13-0.364z"
+       fill-opacity=".86607"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_32)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_29"
+       d="m27.574 30.64c-0.104-0.052-1.144 0.026-1.144 0.026l0.572 1.065-0.208 0.572 0.364-0.624c-0.528-0.632 0.012-0.807 0.416-1.039z"
+       fill-opacity=".86607"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_30)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_27"
+       d="m25.25 18.119c2.095-2.548 3.565-3.295 4.961-3.454-1.783 0.57-3.369 2.026-4.961 3.454z"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_28)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_25"
+       d="m25.911 21.427c-0.032-0.339 5.082-2.036 5.146-1.654 0.442-0.294-3.618-0.038-5.146 1.654z"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_26)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_23"
+       d="m10.548 22.126c1.979-0.86 3.628-1.142 5.219-1.324 0.044-0.036-2.388-0.619-5.219 1.324z"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_24)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_21"
+       d="m12.055 29.109c0.128-0.777 4.258-4.904 4.3-4.484 0-0.493-3.455 1.606-4.3 4.484z"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_22)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_19"
+       d="m21.685 26.389c-0.513 1.244-0.761 2.554-0.883 3.896-0.15-0.022-0.384-2.754 0.883-3.896z"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_20)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_17"
+       d="m26.793 27.014c-0.073-0.147-1.323-1.948-1.323-1.948 0.361 0.806 0.799 1.638 0.882 2.352-0.047-0.847 0.203-0.606 0.441-0.404z"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_18)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_15"
+       d="m16.355 18.23c-0.735-0.331-2.058-0.258-2.058-0.258 0.697 0.495 1.497 0.392 1.58 0.809-0.031-0.238-0.333-0.559 0.478-0.551z"
+       fill-opacity=".78571"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_16)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_13"
+       d="m16.907 22.273c-0.35-0.029-0.853 0.4-1.397 0.955 0.514-0.159 0.992-0.465 1.544-0.478-0.814 0.032-0.482-0.222-0.147-0.477z"
+       fill-opacity=".78571"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_14)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_11"
+       d="m18.119 27.161c0.159-0.47 1.329-2.221 1.397-1.948-0.111-0.2-1.233 0.286-1.397 1.948z"
+       fill-opacity=".78571"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_12)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_9"
+       d="m23.853 27.381c-0.266-0.934-0.053-2.04 0-1.948l0.331 0.882c-0.327-0.078-0.277 0.598-0.331 1.066z"
+       fill-opacity=".78571"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_10)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_7"
+       d="m28.08 22.677c-0.53-0.176-1.531-0.004-2.095 0.294 0.802-0.055 1.498-0.004 1.911 0.331-0.463-0.405-0.113-0.505 0.184-0.625z"
+       fill-opacity=".78571"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_8)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_5"
+       d="m25.029 20.619c0.641-0.814 1.192-1.805 2.205-1.875 0.216-0.647-1.816 0.34-2.205 1.875z"
+       fill-opacity=".78571"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_6)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <path
+       id="imagebot_3"
+       d="m24.625 16.98c0.021-1.162 0.4-1.25 0.698-1.58-0.025-0.051-1.082 0.004-0.698 1.58z"
+       fill-opacity=".78571"
+       transform="translate(-2.9122 -1.0022) matrix(1.41 0 0 1.41 -9.4077 -12.087)"
+       label="Layer 1"
+       filter="url(#imagebot_4)"
+       stroke-width="1px"
+       fill="#ffffff" />
+    <title
+       id="title148">Layer 1</title>
+  </g>
+  <metadata
+     id="metadata150">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2012-02-07T20:27:32</dc:date>
+        <dc:description />
+        <dc:source>https://openclipart.org/detail/167949/firework-ns-by-rduris</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>rduris</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Independence</rdf:li>
+            <rdf:li>Day</rdf:li>
+            <rdf:li>fireworks</rdf:li>
+            <rdf:li>festival</rdf:li>
+            <rdf:li>celebration</rdf:li>
+            <rdf:li>July</rdf:li>
+            <rdf:li>4th</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
