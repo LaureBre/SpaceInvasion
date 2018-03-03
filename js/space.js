@@ -13,16 +13,17 @@ var posPlayer = 50; // au milieu de #space
 
 var vies = 3;
 
-var vitesse = 12; // Vitesse de départ : intervale, + il est petit, + ça va vite
+var vitesseInitiale = 12; // Vitesse de départ : intervale, + il est petit, + ça va vite
+var vitesse = vitesseInitiale;
 var pause = true;
 
 var posYmissFixe = 51; // y de départ du missile : à la pointe du vaisseau
 var posYmissile = posYmissFixe;
 
-var missileTime = 0; // timer du tir du missile
-
 var tic;  // interval de jeu
 
+var missileTime = 0; // timer du tir du missile
+var bombTime = 0;
 var bombReady = false;
 
 // RECUPERATION DE LA VALEUR EN PIXELS DE 1em
@@ -37,27 +38,31 @@ function start() {
   initMissile();
   initBomb();
 
-// les aliens
     tic = setInterval(function() {
 
     // missile joueur
       missileTime++;
       if (missileTime >= 80){
         initMissile();
-        initBomb();
         missileTime = 0;
         hitAlien = false;
       }
       else {
-        if (pause == false) {
-          if (missileTime%4 == 0 ){
-            if (bombReady == true) {
-              moveBomb();
-            }
-            if ( (hitAlien == false) ) {
-              moveMissile();
-            }
-          }
+        if ( (pause == false) && (hitAlien == false) && (missileTime%4 == 0 ) ) {
+          moveMissile();
+        }
+      }
+
+      // bomb aliens
+      bombTime++;
+      if (bombTime >= 160) {
+        bombTime = 0;
+        initBomb();
+        console.log("initBomb");
+      }
+      else {
+        if ( (pause == false) && (bombReady == true) && (missileTime%4 == 0 ) ) {
+          moveBomb();
         }
       }
 

@@ -2,7 +2,9 @@ var hitAlien = false;
 var hit = 0;
 var launch = 0;
 var flou = 6;
-var marge = $("#space").offset().top / em;
+var margeTop = $("#space").offset().top / em;
+var margeLeft = $("#space").offset().left / em;
+console.log(margeLeft);
 
 function missileHit() {
 
@@ -16,11 +18,12 @@ function missileHit() {
           var posXalien = Math.round($(".alien:nth-child(" + j + ") > img").offset().left / em);
 
 
-          if ( (posYalien >= 58 + marge)     // hauteur space 60 - 3 moitié de alien + 1 de marge avant bord
-              || (  (posYalien >= 54 + marge)// hauteur space 60 - 7 (player + marge) + 1 pour que ça morde
+          if ( (posYalien >= 58 + margeTop)     // hauteur space 60 - 3 moitié de alien + 1 de margeTop avant bord
+              || (  (posYalien >= 54 + margeTop)// hauteur space 60 - 7 (player + margeTop) + 1 pour que ça morde
                     && ( Math.round( (posXalien - 30)/flou ) == Math.round(posPlayer / flou)  )      // 30 moitié de blocAlien
                   )
               ) {
+                console.log("touché par un alien");
             perdu();
             // console.log('boom, posYalien = ' + posYalien + ', posXalien = ' + posXalien);
             break; // on empêche la boucle de se poursuivre
@@ -68,11 +71,11 @@ function initBomb() {
       }
       if ($(".alien:nth-child(" + launch + ") .iAlien").is(':visible')) {
         bombReady = true;
-        posXbomb = Math.round(($(".alien:nth-child(" + launch + ") > img").offset().left) / em - 0.75); // largeur bomb ~ 1.5em
+        posXbomb = Math.round(($(".alien:nth-child(" + launch + ") > img").offset().left) / em - 0.75) - margeLeft; // largeur bomb ~ 1.5em
         posYbomb = Math.round(($(".alien:nth-child(" + launch + ") > img").offset().top) / em);
         $('#bomb').css('left', posXbomb + "em");
         $('#bomb').css('top', posYbomb + "em");
-        $("#bomb").css('visibility', 'visible');
+        $("#bomb").fadeIn();
       }
 }
 
@@ -97,13 +100,17 @@ function moveMissile() {
 }
 
 function moveBomb() {
-  posYbomb += 0.2 * em;
+  posYbomb += 0.1 * em;
+  console.log(posYbomb);
   // console.log(launch + " posAlien " + $(".alien:nth-child(" + launch + ") > img").offset().left + ' bomb ' + $('#bomb').css('left'));
   $("#bomb").css('top', Math.round(posYbomb) + "em");
-  if (posYbomb >= 53) {
+  if ( (posYbomb >= 53) && (posYbomb < 55) ) {
     // offset est en pixels, posYbomb en em ; on veut une approximation : la division par flou, arrondie, permet cela
-    if ( Math.round(posXbomb / flou) == ( Math.round( ($("#player").offset().left + 1.5 * em) / (flou * em) ) ) ) {
+    if ( Math.round((posXbomb + margeLeft - 1.5) / flou) == ( Math.round( ($("#player").offset().left ) / (flou * em) ) ) ) {
       perdu();
     }
+  }
+  else if (posYbomb >= 55) {
+    $("#bomb").hide();
   }
 }
