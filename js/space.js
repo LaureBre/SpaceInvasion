@@ -1,28 +1,31 @@
 // $(window).width()
-var posX = 20; // space = 100 em - blocAlien = 40 em / 2
-var posY = 2; // marge par rapport au haut
-var dir = 1; // part à droite
-var maxPosX = 42; // space = 60 em - player = 5 em - marge bas 1em + demi-missile 1 em + nouvelle marge 1 em = 42
-/////////////  variable en fonction des vaisseaux restants
-var maxPosY = 25; // blocAlien
-/////////////
-// // $(window).width()
-// var posX = 0; // space = 100 em - blocAlien = 40 em / 2
-// var posY = -29; // marge par rapport au haut
-// var dir = 1; // part à droite
-// var maxPosX = 19; // space = 60 em - player = 5 em - marge bas 1em + demi-missile 1 em + nouvelle marge 1 em = 42
-// /////////////  variable en fonction des vaisseaux restants
-// var maxPosY = 14; // blocAlien
-// /////////////
-var elem = document.getElementById('blocAlien');
-var vies = 3;
-var vitesse = 10;
-var pause = true;
-var posYmissFixe = 51;
-var posYmissile = posYmissFixe;
-var missileTime = 0;
-var tic;
 
+var posXaliens = 20; // space = 100 em - blocAlien = 40 em / 2
+// console.log("posAliens = " + Math.round($('#blocAlien').css('left').substr(0, 3) / em));
+var posYaliens = 2; // marge par rapport au haut
+var dir = 1; // part à droite
+var maxposXaliens = 42; // space = 60 em - player = 5 em - marge bas 1em + demi-missile 1 em + nouvelle marge 1 em = 42
+/////////////  variable en fonction des vaisseaux restants
+var maxposYaliens = 25; // blocAlien
+/////////////
+
+var posPlayer = 50; // au milieu de #space
+
+var vies = 3;
+
+var vitesse = 12; // Vitesse de départ : intervale, + il est petit, + ça va vite
+var pause = true;
+
+var posYmissFixe = 51; // y de départ du missile : à la pointe du vaisseau
+var posYmissile = posYmissFixe;
+
+var missileTime = 0; // timer du tir du missile
+
+var tic;  // interval de jeu
+
+var bombReady = false;
+
+// RECUPERATION DE LA VALEUR EN PIXELS DE 1em
 var em = $(":root").css("font-size").substr(0, 2);
 console.log("1 em = " + em + "px"); // valeur de 1em en pixels
 
@@ -31,81 +34,64 @@ function start() {
   pause = false;
   hit = 0;
 
+  initMissile();
+  initBomb();
+
 // les aliens
     tic = setInterval(function() {
 
     // missile joueur
       missileTime++;
-      if ( (missileTime < 45) && (pause == false) && (hitAlien == false) ) {
-        if (missileTime%2 == 0 ){
-          repeatMissile();
-        }
-      }
-      else if (missileTime >= 50){
+      if (missileTime >= 80){
         initMissile();
+        initBomb();
         missileTime = 0;
         hitAlien = false;
       }
+      else {
+        if (pause == false) {
+          if (missileTime%4 == 0 ){
+            if (bombReady == true) {
+              moveBomb();
+            }
+            if ( (hitAlien == false) ) {
+              moveMissile();
+            }
+          }
+        }
+      }
 
       // déplacement aliens
-      if ((dir == 1) && (posX >= maxPosX) && (pause == false)) {
+      if ((dir == 1) && (posXaliens >= maxposXaliens) && (pause == false)) {
           dir = -1;
       }
-      else if ((dir == -1) && (posX <= 3) && (pause == false)) {
+      else if ((dir == -1) && (posXaliens <= 3) && (pause == false)) {
           dir = 1;
       }
-      posX += dir/10;
-      elem.style.left = posX + "em";
-      if ((Math.round(posX*10)%30 == 0) && (posY < (23))) {
-          posY += 0.2;
-          elem.style.top = posY + "em";
+      posXaliens += dir/5;
+      $('#blocAlien').css('left', posXaliens + "em");
+      if (Math.round(posXaliens*10)%30 == 0) {
+          posYaliens += 0.1;
+          $('#blocAlien').css('top', posYaliens + "em");
       }
-      else if (posY >= (23)){
-        // clearInterval(tic);
-        perdu();
-      }
-
-      // missiles aliens
 
     }, vitesse);
 }
 
-// repositionnement du missile
-function initMissile() {
-  // réinitialisation du tir au bout d'un certain temps
-    $("#missile").css('visibility', 'visible');
-    // départ sur le Y de player
-    posYmissile = posYmissFixe;
-    $("#missile").css('top', posYmissile + "em");
-    // on revient à la pointe du vaisseau
-    $("#missile").css('left', $("#player").css('left'));
-}
-
-function repeatMissile() {
-  if ((posYmissile > 1) && (hitAlien == false) && (pause == false) ) {
-    // déplacement missile
-    posYmissile -= 2 * em;
-    $("#missile").css('top', Math.round(posYmissile) + "em");
-    missileHit();
-  }
-}
-
-var player = document.getElementById('player');
-var posPlayer = 47.5;
-
+// Interaction utilisateur
 document.addEventListener('keydown', function(e) {
-    if ( (e.keyCode == 37) && (posPlayer > 5 * em) && (pause == false) ) {
-        posPlayer -= 20 / vitesse;
-    } else if ( (e.keyCode == 39) && (posPlayer < 95 * em) && (pause == false) ) {
-        posPlayer += 20 / vitesse;
-    }
-    if ( (e.keyCode == 27) && (pause == false) ) {
+    if ( ((e.keyCode == 37) || (e.keyCode == 81)) && (posPlayer > 5.5) && (pause == false) ) {
+        posPlayer -= 1;
+    } else if ( ((e.keyCode == 39) || (e.keyCode == 68)) && (posPlayer < 95.5) && (pause == false) ) {
+        posPlayer += 1;
+    } else if ( (e.keyCode == 27) && (pause == false) ) {
         pause = true;
         clearInterval(tic);
-    }
-    else if ( (e.keyCode == 27) && (pause == true) ) {
+    } else if ( (e.keyCode == 27) && (pause == true) ) {
         // pause = false;
         start();
+    } else if (e.keyCode == 13) {
+      showGame();
     }
-    player.style.left = posPlayer + "em";
+    $('#player').css('left', posPlayer + "em");
 }, false);

@@ -1,38 +1,55 @@
 var hitAlien = false;
 var hit = 0;
+var launch = 0;
+var flou = 6;
+var marge = $("#space").offset().top / em;
 
 function missileHit() {
 
-      for (var j=0; j<40; j++) {
+      for (var j=1; j<=40; j++) {
 
-        if ($(".alien:nth-child(" + (j+1) + ") .iAlien").is(':visible')) {
+
+        if ($(".alien:nth-child(" + j + ") .iAlien").is(':visible')) {
           // si alien pas encore touché
 
-          if (   (Math.round($(".alien:nth-child(" + (j+1) + ")").offset().left / 60)
-          == (Math.round($("#missile").offset().left / 60)))
-          && (Math.round(($(".alien:nth-child(" + (j+1) + ")").offset().top + 60) / 70))
-          == (Math.round($("#missile").offset().top / 60 ))   ){
-          // si les coordonnées correspondent grossièrement (pour ça qu'on a divisé et arrondi)
+          var posYalien = Math.round($(".alien:nth-child(" + j + ") > img").offset().top / em);
+          var posXalien = Math.round($(".alien:nth-child(" + j + ") > img").offset().left / em);
 
-            hitAlien = true;
-            hit++;
-            // alien touché
 
-            $(".alien:nth-child(" + (j+1) + ") .iAlien").hide();
-            $(".alien:nth-child(" + (j+1) + ")").append("<img src='img/explosion.svg' id='explosion'>");
-            $("#explosion").hide(1000);
+          if ( (posYalien >= 58 + marge)     // hauteur space 60 - 3 moitié de alien + 1 de marge avant bord
+              || (  (posYalien >= 54 + marge)// hauteur space 60 - 7 (player + marge) + 1 pour que ça morde
+                    && ( Math.round( (posXalien - 30)/flou ) == Math.round(posPlayer / flou)  )      // 30 moitié de blocAlien
+                  )
+              ) {
+            perdu();
+            // console.log('boom, posYalien = ' + posYalien + ', posXalien = ' + posXalien);
+            break; // on empêche la boucle de se poursuivre
+          }
+          else {
 
-            setTimeout(function() {
-              $("#explosion").remove();
-            }, 1200);
+            if (   (  Math.round(posXalien / flou) == Math.round($("#missile").offset().left / (flou * em))   )
+                && (  Math.round(posYalien / flou) == Math.round($("#missile").offset().top / (flou * em))   )   ) {
+            // si les coordonnées correspondent grossièrement (pour ça qu'on a divisé et arrondi)
 
-            $("#missile").css('visibility', 'hidden');
-            $("#missile").css('top', "60em");
+              hitAlien = true;
+              hit++;
+              // alien touché
 
+              $(".alien:nth-child(" + j + ") .iAlien").hide();
+              $(".alien:nth-child(" + j + ")").append("<img src='img/explosion.svg' id='explosion'>");
+              $("#explosion").hide(1000);
+
+              setTimeout(function() {
+                $("#explosion").remove();
+              }, 1200);
+
+              $("#missile").css('visibility', 'hidden');
+              $("#missile").css('top', "60em");
+            }
             // // debug // //
             // $(".alien:nth-child(" + (j+1) + ")").append(j+1);
             // $("#missile").css('background-color', 'red');
-            }
+          }
         }
 
       } // fin for j
@@ -42,53 +59,51 @@ function missileHit() {
       }
 }
 
-// joueur touché
-function perdu() {
-  vies--;
-  $('#player').attr('src','img/exploLaterale.svg');
-  $('#player').width('50em');
 
-  bigEvent();
-
-  // message
-  if (vies == 0) {
-    $("#message").html('BOooOoM ! Perdu !');
-    setTimeout(function() {
-      hideGame();
-    }, 1500);
-  }
-  else if (vies == 2) {
-      $("#message").html("BOOM ! Il vous reste deux vies");
-  }
-  else {
-    $("#message").html("BOOoM ! Il ne vous reste plus qu'une seule vie");
-  }
-
+function initBomb() {
+      bombReady = false;
+      launch = Math.floor(Math.random() * 40);
+      while ($(".alien:nth-child(" + launch + ") .iAlien").is(':hidden')) {
+        launch = Math.floor(Math.random() * 40);
+      }
+      if ($(".alien:nth-child(" + launch + ") .iAlien").is(':visible')) {
+        bombReady = true;
+        posXbomb = Math.round(($(".alien:nth-child(" + launch + ") > img").offset().left) / em - 0.75); // largeur bomb ~ 1.5em
+        posYbomb = Math.round(($(".alien:nth-child(" + launch + ") > img").offset().top) / em);
+        $('#bomb').css('left', posXbomb + "em");
+        $('#bomb').css('top', posYbomb + "em");
+        $("#bomb").css('visibility', 'visible');
+      }
 }
 
-var niveau = 1;
-
-function gagne() {
-  $("#message").html("BRAVO ! Vous accédez au niveau suivant.");
-  bigEvent();
-  niveau++;
-}
-
-function bigEvent() {
-  pause = true;
-  resetPos();
-  clearInterval(tic);
-  $("#missile").css('visibility', 'hidden');
-  $('#blocAlien').css('opacity', 0.5);
-  for (var i=0; i<40; i++) {
-    $(".alien:nth-child(" + (i+1) + ") .ialien").css('visibility', 'visible');
-  }
-  vitesse /= 1.5; // on augmente la vitesse
-  setTimeout(function() {
-    $('#message').html('');
-    $('#blocAlien').css('opacity', 1);
+// repositionnement du missile
+function initMissile() {
+  // réinitialisation du tir au bout d'un certain temps
     $("#missile").css('visibility', 'visible');
-    $('#player').width('5em');
-    $('#player').attr('src','img/rocket.svg');
-  }, 1500);
+    // départ sur le Y de player
+    posYmissile = posYmissFixe;
+    $("#missile").css('top', posYmissile + "em");
+    // on revient à la pointe du vaisseau
+    $("#missile").css('left', $("#player").css('left'));
+}
+
+function moveMissile() {
+  if (posYmissile > 1) {
+    // déplacement missile
+    posYmissile -= 0.2 * em;
+    $("#missile").css('top', Math.round(posYmissile) + "em");
+    missileHit();
+  }
+}
+
+function moveBomb() {
+  posYbomb += 0.2 * em;
+  // console.log(launch + " posAlien " + $(".alien:nth-child(" + launch + ") > img").offset().left + ' bomb ' + $('#bomb').css('left'));
+  $("#bomb").css('top', Math.round(posYbomb) + "em");
+  if (posYbomb >= 53) {
+    // offset est en pixels, posYbomb en em ; on veut une approximation : la division par flou, arrondie, permet cela
+    if ( Math.round(posXbomb / flou) == ( Math.round( ($("#player").offset().left + 1.5 * em) / (flou * em) ) ) ) {
+      perdu();
+    }
+  }
 }

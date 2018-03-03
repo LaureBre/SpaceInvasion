@@ -52,8 +52,8 @@ body {
 
 #blocAlien {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: stretch;
     justify-content: space-around;
     position: absolute;
     width: 60em;
@@ -72,7 +72,7 @@ body {
 .alien img {
     width: inherit;
 }
-/* , #blocAlien */
+
 img, button {
   transform: translate(-50%,0);
 }
@@ -94,7 +94,7 @@ img, button {
 }
 
 #bomb {
-    height: 4.5em;
+    height: 3.5em;
 }
 
 button {
