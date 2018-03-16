@@ -6,6 +6,9 @@ function showGame() {
         $('strong').animate({'font-size': '0'}, 2000);
         $('#space').fadeIn(3000);
     setTimeout(function() { start(); }, 2000);
+
+    vies = 0;
+    vitesse = vitesseInitiale;
 }
 
 function hideGame() {
@@ -21,7 +24,6 @@ function resetPos() {
   posYaliens = 2;
   $('#blocAlien').css('top', posYaliens + "em");
   posPlayer = 50;
-  $('#player').css('left', posPlayer + "em");
   for (var j=1; j<=40; j++) {
     $(".alien:nth-child(" + j + ") .iAlien").fadeIn();
   }
@@ -36,7 +38,7 @@ function perdu() {
   bigEvent();
 
   // message
-  if (vies == 0) {
+  if (vies <= 0) {
     $("#message").html('BOooOoM ! Perdu !');
     setTimeout(function() {
       hideGame();
@@ -71,6 +73,7 @@ function bigEvent() {
     $('#message').html('');
     $('#blocAlien').css('opacity', 1);
     $('#player').attr('src','img/rocket.svg');
+    $('#player').css('left', posPlayer + "em");
     start();
   }, 1500);
 }
